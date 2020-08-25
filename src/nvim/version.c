@@ -33,7 +33,7 @@
 "." STR(NVIM_VERSION_MINOR) "." STR(NVIM_VERSION_PATCH)\
 NVIM_VERSION_PRERELEASE
 #endif
-#define NVIM_VERSION_LONG "NVIM " NVIM_VERSION_MEDIUM
+#define NVIM_VERSION_LONG "MentaLabs doomNVIM " NVIM_VERSION_MEDIUM
 
 
 char *Version = VIM_VERSION_SHORT;
@@ -2203,17 +2203,25 @@ void intro_message(int colon)
   char *p;
   static char *(lines[]) = {
     N_(NVIM_VERSION_LONG),
-    "",
-    N_("Nvim is open source and freely distributable"),
-    N_("https://neovim.io/#chat"),
-    "",
-    N_("type  :help nvim<Enter>       if you are new! "),
-    N_("type  :checkhealth<Enter>     to optimize Nvim"),
-    N_("type  :q<Enter>               to exit         "),
-    N_("type  :help<Enter>            for help        "),
-    "",
-    N_("Help poor children in Uganda!"),
-    N_("type  :help iccf<Enter>       for information "),
+	N_("=================     ===============     ===============   ========  ========"),
+	N_("\\\\ . . . . . . .\\\\   //. . . . . . .\\\\   //. . . . . . .\\\\  \\\\. . .\\\\// . . //"),    
+	N_("||. . ._____. . .|| ||. . ._____. . .|| ||. . ._____. . .|| || . . .\\/ . . .||"),    
+	N_("|| . .||   ||. . || || . .||   ||. . || || . .||   ||. . || ||. . . . . . . ||"),    
+	N_("||. . ||   || . .|| ||. . ||   || . .|| ||. . ||   || . .|| || . | . . . . .||"),    
+	N_("|| . .||   ||. _-|| ||-_ .||   ||. . || || . .||   ||. _-|| ||-_.|\\ . . . . ||"),    
+	N_("||. . ||   ||-'  || ||  `-||   || . .|| ||. . ||   ||-'  || ||  `|\\_ . .|. .||"),    
+	N_("|| . _||   ||    || ||    ||   ||_ . || || . _||   ||    || ||   |\\ `-_/| . ||"),    
+	N_("||_-' ||  .|/    || ||    \\|.  || `-_|| ||_-' ||  .|/    || ||   | \\  / |-_.||"),    
+	N_("||    ||_-'      || ||      `-_||    || ||    ||_-'      || ||   | \\  / |  `||"),    
+	N_("||    `'         || ||         `'    || ||    `'         || ||   | \\  / |   ||"),    
+	N_("||            .===' `===.         .==='.`===.         .===' /==. |  \\/  |   ||"),    
+	N_("||         .=='   \\_|-_ `===. .==='   _|_   `===. .===' _-|/   `==  \\/  |   ||"),    
+	N_("||      .=='    _-'    `-_  `='    _-'   `-_    `='  _-'   `-_  /|  \\/  |   ||"),    
+	N_("||   .=='    _-'          `-__\\._-'         `-_./__-'         `' |. /|  |   ||"),    
+	N_("||.=='    _-'                                                     `' |  /==.||"),    
+	N_("=='    _-'                                                            \\/   `=="),    
+	N_("\\   _-'                                                                `-_   /"),    
+	N_(" `''                                                                      ``'"),
   };
 
   // blanklines = screen height - # message lines
